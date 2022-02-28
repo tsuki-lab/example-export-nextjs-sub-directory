@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production'
-const prefixPath = isProd ? '/example-export-nextjs-sub-directory' : ''
+const prefixPath = !isProd ? '/example-export-nextjs-sub-directory' : ''
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
